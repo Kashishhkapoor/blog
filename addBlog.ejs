@@ -1,0 +1,27 @@
+<%- include("header.ejs") %>
+<div class="text-center container d-flex flex-column justify-content-center">
+    <h1>Add Your Blog</h1>
+    <a href="/" class="">Home</a>
+</div>
+<div class="d-flex justify-content-center align-items-center container mt-5">
+<form action="/add-blog" class="w-50" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Author</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="author" name="author">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" placeholder="description"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Published Date</label>
+        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="datetime" name="date">
+      </div>
+      <button type="submit" class="btn btn-primary float-end">Submit</button>
+</form>
+</div>
+<%- include("footer.ejs") %>
